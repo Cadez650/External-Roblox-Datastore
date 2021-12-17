@@ -28,6 +28,7 @@
   app.use(bodyParser.json());
 
   setupNoblox()
+  console.log("app started")
 
   app.post("/", function(req, res) {
     const groupId = req.body.GroupId;
