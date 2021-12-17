@@ -2,8 +2,7 @@
   const app = express();
   const bodyParser = require("body-parser")
   const noblox = require('noblox.js')
-  const mongo = require('./mongo')
-  const userSchema = require('./dbschema')  
+  const firebase = require('firebase');
 
     async function setupNoblox() {
         try {
