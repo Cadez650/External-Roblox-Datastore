@@ -13,18 +13,6 @@
         }
     }
 
-    const connectToMongoDB = async () => {
-        await mongo().then(async(mongoose) => {
-            try {
-                console.log('Connected to mongoDB');
-            } finally {
-                mongoose.connection.close();
-            }
-        })
-    }
-
-    connectToMongoDB()
-
   app.use(bodyParser.json());
 
   setupNoblox()
